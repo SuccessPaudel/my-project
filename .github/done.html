@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <!-- Logo Section -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                My Webpage
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center text-white bg-secondary py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Personal Webpage</h1>
+            <p class="lead">Showcasing my skills and projects</p>
+            <a href="#about" class="btn btn-primary mt-3" id="learn-more-btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Sortable Sections (Logo Placeholder) -->
+    <section id="sortable-sections" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Sort Sections</h2>
+                    <!-- Placeholder for sortable content -->
+                    <div class="sortable-content">
+                        <!-- Logo -->
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <img src="logo.png" alt="Logo" width="100" height="100" class="rounded-circle shadow-lg">
+                        </div>
+                        <!-- Content can be sorted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="profile.jpg" class="img-fluid rounded-circle shadow-lg" alt="Profile Picture">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3">About Me</h2>
+                    <p>Hello! I am Success Paudel, a student with a passion for coding, sports, and movies. I enjoy creating web projects and constantly learning new things. This webpage is a showcase of my work.</p>
+                    <a href="#projects" class="btn btn-outline-primary mt-3">View My Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Ad Placeholder -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Project Cards -->
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">My Projects</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card shadow-sm">
+                                <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <p class="card-text">Description of Project 1.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card shadow-sm">
+                                <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 2</h5>
+                                    <p class="card-text">Description of Project 2.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ad Section -->
+                <div class="col-md-4">
+                    <h3 class="text-center mb-4">Sponsored Ad</h3>
+                    <div class="card shadow-sm mb-3">
+                        <img src="ad1.jpg" class="card-img-top" alt="Ad 1">
+                        <div class="card-body">
+                            <p class="card-text">Ad description or promotional text.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm">
+                        <img src="ad2.jpg" class="card-img-top" alt="Ad 2">
+                        <div class="card-body">
+                            <p class="card-text">Another ad description or promotional text.</p>
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white bg-primary py-3">
+        <p>&copy; 2024 Success Paudel. All Rights Reserved.</p>
+        <p>Follow me on <a href="https://www.instagram.com/thesuccess._.paudel/" class="text-white text-decoration-none">Instagram</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scrolling to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form validation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill out all fields.');
+            } else if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+            } else {
+                alert('Message sent successfully!');
+            }
+        });
+
+        // Email validation function
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Example sortable functionality (requires jQuery and jQuery UI)
+        // Add jQuery and jQuery UI for full sortable functionality
+        // Example:
+        // $(".sortable-content").sortable();
+    </script>
+</body>
+</html>
